@@ -1,0 +1,31 @@
+:root {
+  --brand-100: #FEE5D9;
+  --brand-200: #FDCBB3;
+  --brand-300: #FDB28C;
+  --brand-400: #FC9866;
+  --brand-500: #FB7E40;
+  --brand-600: #C96533;
+  --brand-700: #974C26;
+  --brand-800: #64321A;
+  --brand-900: #32190D;
+
+  --custom-gray-100:#F1EEEC;
+  --custom-gray-200:#E2DDD8;
+  --custom-gray-300:#D4CCC5;
+  --custom-gray-400:#C5BBB1;
+  --custom-gray-500:#B7AA9E;
+  --custom-gray-600:#92887E;
+  --custom-gray-700:#6E665F;
+  --custom-gray-800:#49443F;
+  --custom-gray-900:#252220;
+}
+
+body {
+    background-color: var(--custom-gray-100);
+    color: var(--custom-gray-800);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+h1, h2 {
+     color: var(--custom-gray-900);
+}
