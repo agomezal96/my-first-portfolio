@@ -211,6 +211,14 @@ main h1 {
   color: var(--brand-700);
 }
 
+main h2 {
+  font-weight: 400;
+  color: var(--brand-600);
+}
+section {
+  margin: 2rem auto;
+}
+
 .avatar {
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -313,6 +321,76 @@ form button {
   display: flex;
   flex-direction: column;
 }
+
+/* Experience card */
+
+  article {
+    box-shadow:
+      0.125rem 0.438rem 1.219rem 0rem rgba(33, 33, 33, 0.15),
+      0rem 0.25rem 0.475rem 0rem rgba(33, 33, 33, 0.1);
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    margin: 1rem auto;
+  }
+
+  .experience-and-download {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .experience-titles,
+  .experience-text {
+    display: flex;
+    flex-direction: column;
+
+    .role {
+      font-size: 1.063rem;
+    }
+  }
+
+  .experience-titles {
+    width: 40%;
+    justify-content: start;
+  }
+
+  .experience-text {
+    justify-content: space-between;
+    width: 60%;
+    gap: 1rem;
+  }
+
+  .date {
+    color: var(--custom-gray-700);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  .role {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--brand-800);
+    font-size: 0.875rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .company {
+    color: var(--custom-gray-700);
+    font-weight: 400;
+    font-size: 1.063rem;
+    margin: 0;
+  }
+
+  .location {
+    color: var(--custom-gray-700);
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin: 0;
+  }
 
 @media (width < 866px) {
   main {
