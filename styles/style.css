@@ -91,10 +91,13 @@ body {
   color: var(--custom-gray-800);
   font-family: 'Plus Jakarta Sans', sans-serif;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .content {
-  background-color: var(--brand-200);
+  background-color: var(--brand-300);
 }
 
 h1,
@@ -200,6 +203,7 @@ main {
   border-radius: 16px;
   box-shadow: 0.125rem 0.438rem 1.219rem 0rem rgba(33, 33, 33, 0.15),
     0rem 0.25rem 0.475rem 0rem rgba(33, 33, 33, 0.1);
+  flex-grow: 1;
 }
 
 main h1 {
@@ -228,6 +232,86 @@ blockquote {
 
 cite {
   font-style: normal;
+}
+
+/* Button */
+
+.primary-button {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--custom-gray-900);
+  background-color: var(--brand-500);
+  padding: 0.5rem 1rem;
+  border-radius: 1.875rem;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    font-weight: bold;
+    color: var(--custom-gray-100);
+    background-color: var(--brand-800);
+  }
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+    border: none;
+    border-bottom: 1rem solid var(--text-black);
+    border-width: 0.125rem;
+    padding: 0.5rem;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+fieldset {
+    padding: 0.3rem 0;
+    border: none;
+}
+.connect{
+  font-size: 1.25rem;
+}
+
+form button {
+  align-self: center;
+}
+
+.input-label {
+  font-size: 1rem;
+}
+
+.required-field {
+  color: var(--brand-600);
+}
+
+.name-surname {
+  display: flex;
+  justify-content: start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.email-subject-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.field,
+.field-message {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (width < 866px) {

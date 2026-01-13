@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrea Gomez - About me</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <div class="logo-and-subtitle">
+          <h2 class="logo">Andrea Gómez Álvarez</h2>
+          <h3 class="logo-subtitle">Front-end developer</h3>
+        </div>
+        <nav>
+          <ul class="nav-bar">
+            <li><a href="index.html" title="Projects">Projects</a></li>
+            <li>
+              <a href="about.html" title="About me">About me</a>
+            </li>
+            <li>
+              <a href="contact.html" title="Contact" class="selected"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Contact me</h1>
+        <p>
+          If you're interested in learning more about my projects, my career
+          path, or if you have any questions or comments (any advice or
+          contribution is more than welcome!), I encourage you to contact me in
+          any way you prefer!
+        </p>
+
+        <p class="connect">
+          <a href="https://www.linkedin.com/in/andreagomezalvarez1996/"
+            >Connect with me on LinkedIn</a
+          >
+          or send me an email:
+        </p>
+
+        <form>
+          <fieldset class="name-surname">
+            <div class="field">
+              <label class="input-label" for="name"
+                >Your name <span class="required-field">*</span>
+              </label>
+              <input type="text" id="name" required />
+            </div>
+            <div class="field">
+              <label class="input-label" for="surname"
+                >Your surname <span class="required-field">*</span>
+              </label>
+              <input type="text" id="surname" required />
+            </div>
+          </fieldset>
+          <fieldset class="email-subject-message">
+            <div class="field">
+              <label class="input-label" for="email"
+                >Your email <span class="required-field">*</span>
+              </label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="field">
+              <label class="input-label" for="subject">Subject </label>
+              <input type="text" id="subject" required />
+            </div>
+            <div class="field-message">
+              <label class="input-label" for="message"
+                >Message <span class="required-field">*</span>
+              </label>
+              <textarea id="message"></textarea>
+            </div>
+          </fieldset>
+          <button class="primary-button" type="button">Send</button>
+        </form>
+      </main>
+      <footer>
+        <p>
+          &copy; 2026 Created by
+          <a href="https://github.com/agomezal96" title="Go to github profile"
+            >Andrea Gómez Álvarez</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
