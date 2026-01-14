@@ -83,7 +83,7 @@ h6 {
 }
 
 * {
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 body {
@@ -144,6 +144,7 @@ footer {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0;
+  text-decoration: none;
 }
 
 .logo-subtitle {
@@ -204,6 +205,58 @@ main {
   box-shadow: 0.125rem 0.438rem 1.219rem 0rem rgba(33, 33, 33, 0.15),
     0rem 0.25rem 0.475rem 0rem rgba(33, 33, 33, 0.1);
   flex-grow: 1;
+}
+
+.home-page {
+  box-shadow: none;
+  width: 100%;
+  background-color: var(--brand-100);
+  border-radius: 0;
+}
+
+.hero {
+  padding: 1rem 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro-quotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.intro-quote-1 {
+  font-size: 1.4rem;
+  display: block;
+}
+.intro-quote-2 {
+  font-size: 1.6rem;
+  display: block;
+}
+.intro-quote-3 {
+  font-size: 1.8rem;
+  display: block;
+}
+.intro-quote-4 {
+  font-size: 2.2rem;
+  display: block;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+@media (width < 866px) {
+  .intro-quotes {
+    text-align: center;
+  }
+  .hero {
+    flex-direction: column;
+  }
 }
 
 main h1 {
@@ -272,21 +325,22 @@ form {
   gap: 1rem;
 }
 
-input, textarea {
-    border: none;
-    border-bottom: 1rem solid var(--text-black);
-    border-width: 0.125rem;
-    padding: 0.5rem;
-    max-width: 100%;
-    background-color: white;
-    border-radius: 4px;
+input,
+textarea {
+  border: none;
+  border-bottom: 1rem solid var(--text-black);
+  border-width: 0.125rem;
+  padding: 0.5rem;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 4px;
 }
 
 fieldset {
-    padding: 0.3rem 0;
-    border: none;
+  padding: 0.3rem 0;
+  border: none;
 }
-.connect{
+.connect {
   font-size: 1.25rem;
 }
 
@@ -324,79 +378,87 @@ form button {
 
 /* Experience card */
 
-  article {
-    box-shadow:
-      0.125rem 0.438rem 1.219rem 0rem rgba(33, 33, 33, 0.15),
-      0rem 0.25rem 0.475rem 0rem rgba(33, 33, 33, 0.1);
-    display: flex;
-    gap: 1rem;
-    padding: 2rem;
-    background-color: var(--bg-color);
-    border-radius: 8px;
-    margin: 1rem auto;
-  }
+article {
+  box-shadow: 0.125rem 0.438rem 1.219rem 0rem rgba(33, 33, 33, 0.15),
+    0rem 0.25rem 0.475rem 0rem rgba(33, 33, 33, 0.1);
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  margin: 1rem auto;
+}
 
-  .experience-and-download {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+.experience-and-download {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .experience-titles,
-  .experience-text {
-    display: flex;
-    flex-direction: column;
+.experience-titles,
+.experience-text {
+  display: flex;
+  flex-direction: column;
 
-    .role {
-      font-size: 1.063rem;
-    }
-  }
-
-  .experience-titles {
-    width: 40%;
-    justify-content: start;
-  }
-
-  .experience-text {
-    justify-content: space-between;
-    width: 60%;
-    gap: 1rem;
-  }
-
-  .date {
-    color: var(--custom-gray-700);
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin: 0;
-  }
   .role {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--brand-800);
-    font-size: 0.875rem;
-    width: 100%;
-    margin: 0;
-  }
-
-  .company {
-    color: var(--custom-gray-700);
-    font-weight: 400;
     font-size: 1.063rem;
-    margin: 0;
   }
+}
 
-  .location {
-    color: var(--custom-gray-700);
-    font-weight: 400;
-    font-size: 0.875rem;
-    margin: 0;
-  }
+.experience-titles {
+  width: 40%;
+  justify-content: start;
+}
+
+.experience-text {
+  justify-content: space-between;
+  width: 60%;
+  gap: 1rem;
+}
+
+.date {
+  color: var(--custom-gray-700);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0;
+}
+.role {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-800);
+  font-size: 0.875rem;
+  width: 100%;
+  margin: 0;
+}
+
+.company {
+  color: var(--custom-gray-700);
+  font-weight: 400;
+  font-size: 1.063rem;
+  margin: 0;
+}
+
+.location {
+  color: var(--custom-gray-700);
+  font-weight: 400;
+  font-size: 0.875rem;
+  margin: 0;
+}
 
 @media (width < 866px) {
   main {
     width: 95%;
     padding: 1rem;
     margin: 1rem auto;
+  }
+
+  .experience {
+    flex-direction: column;
+  }
+
+  .experience-titles,
+  .experience-text {
+    width: 100%;
   }
 }
 
