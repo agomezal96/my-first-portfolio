@@ -16,44 +16,65 @@
     </head>
   </head>
   <body>
-    <header>
-      <div class="logo-and-subtitle">
-        <a href="index.html" class="logo"
-          ><h2 class="logo">Andrea Gómez Álvarez</h2></a
-        >
-        <h3 class="logo-subtitle">Front-end developer</h3>
-      </div>
-      <nav>
-        <ul class="nav-bar">
-          <li>
-            <a href="index.html" title="Projects" class="selected">Projects</a>
-          </li>
-          <li>
-            <a href="about.html" title="About me">About me</a>
-          </li>
-          <li>
-            <a href="contact.html" title="Contact">Contact</a>
-          </li>
-          <li>
-            <a href="resume.html" title="Resume">Resume</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="home-page">
+    <div class="homepage-intro">
+      <header>
+        <div class="logo-and-subtitle">
+          <a href="index.html" class="logo"
+            ><h2 class="logo">Andrea Gómez Álvarez</h2></a
+          >
+          <h3 class="logo-subtitle">Front-end developer</h3>
+        </div>
+        <nav>
+          <ul class="nav-bar">
+            <li>
+              <a href="#projects" title="Projects" class="selected">Projects</a>
+            </li>
+            <li>
+              <a href="about.html" title="About me">About me</a>
+            </li>
+            <li>
+              <a href="contact.html" title="Contact">Contact</a>
+            </li>
+            <li>
+              <a href="resume.html" title="Resume">Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <section class="hero">
         <div class="intro-quotes">
           <span class="intro-quote-1">I observe, I listen, I analyze</span>
-          <span class="intro-quote-2">I think, I understand</span> 
+          <span class="intro-quote-2">I think, I understand</span>
           <span class="intro-quote-3">I design and then</span>
           <span class="intro-quote-4">I make it happen</span>
         </div>
         <div class="intro-face">
-          <img src="/images/happy-image.svg" alt="A happy emoji" class="avatar" width="250" />
+          <img
+            src="/images/happy-image.svg"
+            alt="A happy emoji"
+            class="avatar"
+            width="250"
+          />
         </div>
+        <p class="welcome"><strong>I'm Andrea</strong>. Welcome to my space</p>
       </section>
-      <section id="projects">
+    </div>
+    <main class="home-page">
+      <section id="projects" class="projects">
         <h1>Projects</h1>
+        <article>
+          <h2>Calculator project: HTML & CSS</h2>
+          <p>
+            Basic calculator (not functional for now), built with HTML and CSS.
+          </p>
+          <div class="project-preview">
+            <iframe
+              src="https://agomezal96.github.io/basic-calculator/"
+              title="Basic calculator built with HTML and CSS"
+              >
+            </iframe>
+          </div>
+        </article>
       </section>
     </main>
     <footer>
